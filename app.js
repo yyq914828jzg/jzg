@@ -97,10 +97,10 @@ var reason = data.reason
   })
   //指标监测关注指标
   app.use('/api/detection', (req, res) => {
-	res.json({
-	  errno: 0,
-	  data: detection
-	})
+  	console.log(1)
+  	// res=detection;
+ //  	console.log(res)
+	res.json(detection)
   }),
   // 指标列表页下半部分所有指标
   app.use('/api/allQuotas', (req, res) => {
